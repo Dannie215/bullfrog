@@ -6,6 +6,22 @@
 @import "compass/reset";
 @import "variables";
 
+
+
+.above-header {
+background :#0000000;
+}
+
+
+#main-nav { 
+	a{ 
+	color:white;
+	text-decoration:none;
+	line-height: 40px;
+	font-size: 14px;
+	padding: 0 24px 0 24px;
+	&hover {
+		text-decoration:;
 body {
-  // background: red;
+  background: red;
 }

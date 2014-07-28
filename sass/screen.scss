@@ -14,7 +14,7 @@ background :#0000000;
 
 
 #main-nav { 
-	a{ 
+	a { 
 	color:white;
 	text-decoration:none;
 	line-height: 40px;
@@ -22,10 +22,10 @@ background :#0000000;
 	padding: 0 24px 0 24px;
 	&hover {
 		text-decoration:;
+
 body {
   background: red;
 }
-
 
 #headertop {
 		background: $froggreen;
@@ -42,5 +42,15 @@ body {
 
 #page {
 	margin: 0 auto;
+
+}
+
+article {
+	outline : 3px solid red;
+	h1 {
+		outline: 3px solid orange;
+		color: froggreen
+		margin: 12px 0;
+	}
 
 }

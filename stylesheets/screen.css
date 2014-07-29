@@ -57,3 +57,43 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+#page {
+  position: center;
+}
+
+.above-header {
+  background-color: #000000;
+  display: inline-block;
+  height: 40px;
+  width: 1225px;
+}
+
+.above-header .main-nav {
+  padding: 10px;
+}
+.above-header .main-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+}
+
+#top {
+  background-color: #668134;
+  display: block;
+  width: 1225px;
+  height: 160px;
+}
+
+.logo {
+  background-image: url "..images/bullfrog-header.png";
+  display: block;
+  background: no-repeat;
+  padding: 30px;
+}
+
+.logo a {
+  font-size: 85px;
+  color: white;
+  text-decoration: none;
+}

@@ -6,51 +6,55 @@
 @import "compass/reset";
 @import "variables";
 
-
-
-.above-header {
-background :#0000000;
-}
-
-
-#main-nav { 
-	a { 
-	color:white;
-	text-decoration:none;
-	line-height: 40px;
-	font-size: 14px;
-	padding: 0 24px 0 24px;
-	&hover {
-		text-decoration:;
-
-body {
-  background: red;
-}
-
-#headertop {
-		background: $froggreen;
-		height:
-		padding:
-		background: url ("../images/bullfrog-header.png") no-repeat right;
-			.logo a {
-
-				font-size :72px;
-				color: white;
-				text decoration: none;
-			}
-		}
+$froggreen: #668134;
+$frogblack: #000000;
 
 #page {
-	margin: 0 auto;
+margin:0 auto;
+
 
 }
 
-article {
-	outline : 3px solid red;
-	h1 {
-		outline: 3px solid orange;
-		color: froggreen
-		margin: 12px 0;
+.above-header {
+	background-color: #000000;
+	display: inline-block;
+	height: 175px;
+	width: 1225px;
+}
+.above-header .main-nav  {
+	padding: 10px;
+		a {
+			text-decoration: none;
+			color: white;
+			line-height: 40px;
+		}
 	}
 
+#top {
+
+	background-color: $froggreen;
+	display: block; 
+	width: 1225px;
+	height: 160px;
+	}
+.logo {
+	background-image: url ('..images/bullfrog-header.png') ;
+	display: block;
+	background: no-repeat;
+	padding: 30px;	
+			
+	}
+.logo a {
+		font-size: 85px;
+		color: white ;
+		text-decoration: none;
 }
+
+
+
+
+
+
+
+
+

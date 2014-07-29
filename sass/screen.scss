@@ -5,56 +5,122 @@
 
 @import "compass/reset";
 @import "variables";
-
+$frogsans: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $froggreen: #668134;
 $frogblack: #000000;
 
+@mixin sitelinks ($color) {
+	display: block;
+	text-decoration: none;
+	margin-bottom: 30px;
+	color: ($color);
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+%quarter-col {
+  margin: 0 24px;
+  width: 267px;
+  float: left;
+}
+
+h2 {
+  font-size: 20px;
+  color: $froggreen;
+  margin: 24px 0;
+}
+
+
 #page {
-margin:0 auto;
-
-
+  max-width: 1225px;
+  margin: 0 auto;
 }
 
 .above-header {
 	background-color: #000000;
-	display: inline-block;
-	height: 175px;
-	width: 1225px;
 }
 .above-header .main-nav  {
-	padding: 10px;
 		a {
 			text-decoration: none;
 			color: white;
-			line-height: 40px;
+			line-height: 30px;
+			font-size: 14px;
+			padding: 0 24px 0 24px;
+				&:hover {
+			text-decoration: underline;
+			}
 		}
 	}
 
-#top {
+header#top {
+  padding: 50px 24px;
+  background: $froggreen url("../images/bullfrog-header.png") no-repeat right ;
+  margin-bottom: 50px;
+  .logo a {
+    font-size: 72px;
+    color: white;
+    text-decoration: none;
+    font: $frogsans;
+  }
+}
 
-	background-color: $froggreen;
-	display: block; 
-	width: 1225px;
-	height: 160px;
-	}
-.logo {
-	background-image: url ('..images/bullfrog-header.png') ;
-	display: block;
-	background: no-repeat;
-	padding: 30px;	
-			
-	}
-.logo a {
-		font-size: 85px;
-		color: white ;
-		text-decoration: none;
+#content {
+  width: 578px;
+  float: left;
+}
+
+article {
+  font-size: 16px;
+  line-height: 27px;
+  h1 {
+    font-size: 36px;
+    color: $froggreen;
+    margin: 24px 0;
+  }
+  p {
+    font-family: $frogsans;
+
+  }
 }
 
 
+section.content-center,
+section.content-right {
+  @extend %quarter-col;
+  a {
+    @include sitelinks($froggreen);
+  }
+}
 
+section.content-center {
+  ul {
+    font-family: $frogsans;
+    li {
+      a {
+        @include sitelinks($froggreen);
+      }
+    }
+  }
+}
 
+section.content-right {
+  article {
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  h3 {
+    @extend h2;
+    margin-bottom: 20px;
+  }
+}
 
-
-
-
-
+footer {
+  clear: both;
+  margin-top: 20px;
+  background: $frogblack;
+  padding: 40px;
+  color: white;
+}
